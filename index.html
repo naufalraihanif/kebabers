@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEBABERS - Kebab Bersahabat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">KEBABERS</div>
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#contact">Kontak</a>
+            <a href="#" id="cart-icon">
+                Keranjang (<span id="cart-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>KEBABERS</h1>
+            <h2>Kebab Bersahabat, Rasanya Dahsyat!</h2>
+            <p>Nikmati perpaduan rasa otentik yang tak terlupakan.</p>
+            <button class="cta-button">Lihat Menu</button>
+        </section>
+
+        <section id="menu">
+            <h2>Pilihan Menu Terbaik</h2>
+            <div class="menu-container">
+                <div class="menu-item" data-name="Kebab Ayam Geprek" data-price="12000">
+                    <img src="kebab ayam geprek.jpg" alt="Kebab Ayam Geprek" class="product-image">
+                    <h3>Kebab Ayam Geprek</h3>
+                    <p>Kebab dengan potongan ayam geprek pedas dan saus spesial.</p>
+                    <span class="price">Rp. 12.000</span>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="menu-item" data-name="Kebab Beef" data-price="10000">
+                    <img src="kebab beef.jpg" alt="Kebab Beef" class="product-image">
+                    <h3>Kebab Beef</h3>
+                    <p>Daging sapi pilihan dengan sayuran segar dan saus gurih.</p>
+                    <span class="price">Rp. 10.000</span>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="menu-item" data-name="Kebab Original" data-price="5000">
+                    <img src="original.jpg" alt="Kebab Original" class="product-image">
+                    <h3>Kebab Original</h3>
+                    <p>Kelezatan klasik dengan resep otentik yang tak lekang oleh waktu.</p>
+                    <span class="price">Rp. 5.000</span>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Tentang Kami</h2>
+            <p>KEBABERS didirikan dengan satu tujuan: menyajikan kebab berkualitas dengan harga terjangkau. Kami selalu
+                menggunakan bahan-bahan segar dan terbaik untuk memastikan setiap gigitan adalah pengalaman yang
+                memuaskan.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Hubungi Kami</h2>
+            <p>Pesan sekarang juga atau kunjungi kami di:</p>
+            <p>📍 Alamat: [Rajabasa, Politeknik Negeri Lampung]</p>
+            <p>📲 Instagram: [@kebabers]</p>
+            <p>📧 Email: [kebabers@gmail.com]</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 KEBABERS. Kresna Abrori & Naufal Raihan Hanif</p>
+    </footer>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Keranjang Belanja</h2>
+            <div id="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong>Total: <span id="total-price">Rp. 0</span></strong>
+            </div>
+            <button class="checkout-btn">Pesan Sekarang</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
